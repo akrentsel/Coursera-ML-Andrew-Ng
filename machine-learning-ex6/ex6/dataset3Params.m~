@@ -35,7 +35,7 @@ for i = 1:numel(c_vals)
         if pred_error < min_pred_error
             C = c_vals(i);
             sigma = sigma_vals(j);
-            min_pred_error = pred_error;
+            min_pred_error
         end
     end
 end
