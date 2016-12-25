@@ -100,11 +100,10 @@ while ~isempty(email_contents)
     for i = 1:numel(vocabList)
         wrd = vocabList{i};
         if strcmp(wrd, str)
-            word_indices = [word_indices ; i];
-            break
-        end
+            
     end
     
+    word_indices = [word_indices ; idx];
 
     % =============================================================
 
