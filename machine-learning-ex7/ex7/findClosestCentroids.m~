@@ -23,15 +23,11 @@ idx = zeros(size(X,1), 1);
 
 for i = 1:size(X,1)
     mindex = -1;
-    mindistance = inf;
+    mindistance = -1;
     ex = X(i,:)';
     for j = 1:K
         centr = centroids(j,:)';
-        dist = norm(centr - ex);
-        if (dist < mindistance)
-            mindistance = dist;
-            mindex = j;
-        end
+        dist = norm(centr
     end
     idx(i) = mindex;
 end
